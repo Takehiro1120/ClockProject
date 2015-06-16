@@ -8,6 +8,14 @@ import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.Option;
 
 public class Args {
+	 @Option(name="-lc", aliases="--long-hand-color", usage="Set long hand color.", metaVar="<TIMEZONE>")
+	 private String longHandColor = "#ff0000";
+	 public string getLongHandCOlor(){
+		 return longHandColor;
+	 }
+	 
+    private String timeZone;
+
     @Option(name="-tz", aliases="--timezone", usage="Specifies time zone.  Default is local time.", metaVar="<TIMEZONE>")
     private String timeZone;
 
